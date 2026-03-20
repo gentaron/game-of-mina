@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mina Celestia | 蒼井凛花 - Official Fan Tribute</title>
+  <meta name="description" content="Mina Celestia — 青の守護者セレスティア・サファイア。蒼井凛花の全設定・戦歴・能力を公開。"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-ring"></div>
+      <div class="loading-ring delay"></div>
+      <div class="loading-text">
+        <span>M</span><span>I</span><span>N</span><span>A</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="nav-icon">◇</span>
+      <span class="nav-title">MINA CELESTIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active" data-section="hero">HOME</a>
+      <a href="#profile" class="nav-link" data-section="profile">PROFILE</a>
+      <a href="#abilities" class="nav-link" data-section="abilities">ABILITIES</a>
+      <a href="#timeline" class="nav-link" data-section="timeline">CHRONICLE</a>
+      <a href="#gallery" class="nav-link" data-section="gallery">GALLERY</a>
+      <a href="#world" class="nav-link" data-section="world">WORLD</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#hero" class="mobile-link">HOME</a>
+    <a href="#profile" class="mobile-link">PROFILE</a>
+    <a href="#abilities" class="mobile-link">ABILITIES</a>
+    <a href="#timeline" class="mobile-link">CHRONICLE</a>
+    <a href="#gallery" class="mobile-link">GALLERY</a>
+    <a href="#world" class="mobile-link">WORLD</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-layers">
+      <div class="hero-gradient"></div>
+      <div class="hero-rays"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-subtitle-top reveal-up">— The Azure Guardian —</div>
+      <h1 class="hero-title">
+        <span class="title-line reveal-up" style="animation-delay: 0.3s">
+          <span class="title-jp">蒼井凛花</span>
+        </span>
+        <span class="title-line reveal-up" style="animation-delay: 0.6s">
+          <span class="title-en">MINA CELESTIA</span>
+        </span>
+        <span class="title-line title-sub reveal-up" style="animation-delay: 0.9s">
+          <span class="title-alias">— セレスティア・サファイア —</span>
+        </span>
+      </h1>
+      <p class="hero-tagline reveal-up" style="animation-delay: 1.2s">
+        青き閃光が、夜の東京を駆け抜ける。<br>
+        海の意志を継ぐ者、最後の守護者。
+      </p>
+      <div class="hero-scroll reveal-up" style="animation-delay: 1.8s">
+        <div class="scroll-indicator">
+          <div class="scroll-line"></div>
+        </div>
+        <span>SCROLL</span>
+      </div>
+    </div>
+    <!-- Floating feathers in hero -->
+    <div class="feather feather-1"></div>
+    <div class="feather feather-2"></div>
+    <div class="feather feather-3"></div>
+    <div class="feather feather-4"></div>
+    <div class="feather feather-5"></div>
+  </section>
+
+  <!-- Profile Section -->
+  <section id="profile" class="section profile-section">
+    <div class="section-header">
+      <div class="section-number">01</div>
+      <h2 class="section-title">
+        <span class="title-deco">◇</span>
+        PROFILE
+        <span class="title-deco">◇</span>
+      </h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="profile-grid">
+      <div class="profile-card character-visual">
+        <div class="card-glow"></div>
+        <div class="character-frame">
+          <div class="character-placeholder">
+            <div class="char-silhouette">
+              <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="silGrad" x1="100" y1="0" x2="100" y2="300" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#0ea5e9"/>
+                    <stop offset="100%" stop-color="#0369a1"/>
+                  </linearGradient>
+                </defs>
+                <ellipse cx="100" cy="60" rx="35" ry="40" fill="url(#silGrad)" opacity="0.3"/>
+                <path d="M60 100 Q100 80 140 100 L150 200 Q100 220 50 200 Z" fill="url(#silGrad)" opacity="0.2"/>
+                <path d="M50 200 L40 300 L80 290 L100 300 L120 290 L160 300 L150 200 Z" fill="url(#silGrad)" opacity="0.15"/>
+                <path d="M130 50 Q160 30 140 120 Q135 100 130 50Z" fill="url(#silGrad)" opacity="0.25"/>
+              </svg>
+            </div>
+            <div class="char-label">MINA</div>
+            <div class="char-element-icon">
+              <svg viewBox="0 0 40 40" width="40" height="40">
+                <circle cx="20" cy="20" r="18" fill="none" stroke="#0ea5e9" stroke-width="1.5" opacity="0.6"/>
+                <path d="M20 5 L20 35 M5 20 L35 20" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+                <circle cx="20" cy="20" r="8" fill="none" stroke="#0ea5e9" stroke-width="1" opacity="0.8"/>
+                <circle cx="20" cy="20" r="3" fill="#0ea5e9" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="element-badge">
+          <span class="element-icon">💎</span>
+          <span>Hydro / Cryo</span>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-group">
+          <h3 class="info-title">基本情報</h3>
+          <div class="info-table">
+            <div class="info-row">
+              <span class="info-label">本名</span>
+              <span class="info-value">蒼井 凛花（Aoi Rinka）</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">コードネーム</span>
+              <span class="info-value">Mina Celestia / セレスティア・サファイア</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">年齢</span>
+              <span class="info-value">26歳</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">身長 / 体重</span>
+              <span class="info-value">172cm / 58kg</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">誕生日</span>
+              <span class="info-value">12月21日（冬至）</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">所属</span>
+              <span class="info-value">無所属（フリーランス）</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">表の顔</span>
+              <span class="info-value">セキュリティコンサルタント</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">覚醒年齢</span>
+              <span class="info-value">24歳（サファイア結晶との融合）</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-group">
+          <h3 class="info-title">パーソナリティ</h3>
+          <p class="info-desc">
+            クールで真面目。責任感が異常に強く、法の外で動く自分を常に自問自答している。
+            実は寂しがり屋で、信頼した相手には甘える一面あり。
+          </p>
+          <div class="quote-box">
+            <span class="quote-mark">"</span>
+            <p>…仕方ないわね。私がやるしかないでしょ。</p>
+            <span class="quote-attr">— Mina の口癖</span>
+          </div>
+        </div>
+
+        <div class="likes-grid">
+          <div class="like-card like">
+            <div class="like-icon">♡</div>
+            <h4>好きなもの</h4>
+            <p>夜の海、ブラックコーヒー、ショパン、静かな図書館</p>
+          </div>
+          <div class="like-card dislike">
+            <div class="like-icon">✕</div>
+            <h4>嫌いなもの</h4>
+            <p>無責任な人間、甘いもの、暑さ、騒がしい場所</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abilities Section -->
+  <section id="abilities" class="section abilities-section">
+    <div class="section-header">
+      <div class="section-number">02</div>
+      <h2 class="section-title">
+        <span class="title-deco">◇</span>
+        ABILITIES
+        <span class="title-deco">◇</span>
+      </h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Stats Radar -->
+    <div class="stats-container">
+      <div class="radar-chart">
+        <canvas id="radarCanvas" width="400" height="400"></canvas>
+      </div>
+      <div class="stats-bars">
+        <div class="stat-bar-item" data-value="95">
+          <div class="stat-bar-label">
+            <span>攻撃力</span>
+            <span class="stat-bar-value">95</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill attack"></div>
+          </div>
+        </div>
+        <div class="stat-bar-item" data-value="78">
+          <div class="stat-bar-label">
+            <span>防御力</span>
+            <span class="stat-bar-value">78</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill defense"></div>
+          </div>
+        </div>
+        <div class="stat-bar-item" data-value="92">
+          <div class="stat-bar-label">
+            <span>速度</span>
+            <span class="stat-bar-value">92</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill speed"></div>
+          </div>
+        </div>
+        <div class="stat-bar-item" data-value="88">
+          <div class="stat-bar-label">
+            <span>知力</span>
+            <span class="stat-bar-value">88</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill intel"></div>
+          </div>
+        </div>
+        <div class="stat-bar-item" data-value="70">
+          <div class="stat-bar-label">
+            <span>精神耐性</span>
+            <span class="stat-bar-value">70</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill mental"></div>
+          </div>
+        </div>
+        <div class="stat-bar-item" data-value="97">
+          <div class="stat-bar-label">
+            <span>エネルギー出力</span>
+            <span class="stat-bar-value">97</span>
+          </div>
+          <div class="stat-bar-track">
+            <div class="stat-bar-fill energy"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Cards -->
+    <div class="skills-grid">
+      <div class="skill-card" data-tier="ultimate">
+        <div class="skill-tier">ULTIMATE</div>
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">
+            <svg viewBox="0 0 60 60" width="60" height="60">
+              <circle cx="30" cy="30" r="25" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+              <circle cx="30" cy="30" r="15" fill="none" stroke="#0ea5e9" stroke-width="1" opacity="0.5"/>
+              <path d="M30 5 L35 25 L30 20 L25 25 Z" fill="#0ea5e9" opacity="0.7"/>
+              <path d="M30 55 L25 35 L30 40 L35 35 Z" fill="#0ea5e9" opacity="0.7"/>
+              <path d="M5 30 L25 25 L20 30 L25 35 Z" fill="#0ea5e9" opacity="0.7"/>
+              <path d="M55 30 L35 35 L40 30 L35 25 Z" fill="#0ea5e9" opacity="0.7"/>
+            </svg>
+          </div>
+        </div>
+        <h3>サファイア・バースト</h3>
+        <p class="skill-desc">結晶エネルギーを解放し、衝撃波・バリア・貫通ビームの三形態を使い分ける究極技。最大出力時、半径500mの全破壊が可能。</p>
+        <div class="skill-tags">
+          <span class="skill-tag">衝撃波</span>
+          <span class="skill-tag">バリア</span>
+          <span class="skill-tag">貫通ビーム</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-tier="skill">
+        <div class="skill-tier">SKILL</div>
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">
+            <svg viewBox="0 0 60 60" width="60" height="60">
+              <path d="M30 5 Q45 20 45 35 Q45 50 30 55 Q15 50 15 35 Q15 20 30 5Z" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+              <path d="M30 15 Q38 25 38 33 Q38 42 30 45 Q22 42 22 33 Q22 25 30 15Z" fill="#0ea5e9" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+        <h3>オーシャン・シールド</h3>
+        <p class="skill-desc">海水を瞬間凍結させ、氷壁のバリアを展開。味方全員を守護する新覚醒能力。</p>
+        <div class="skill-tags">
+          <span class="skill-tag">氷壁</span>
+          <span class="skill-tag">守護</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-tier="passive">
+        <div class="skill-tier">PASSIVE</div>
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">
+            <svg viewBox="0 0 60 60" width="60" height="60">
+              <circle cx="30" cy="30" r="20" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4 2"/>
+              <path d="M20 30 L30 10 L40 30 L30 50 Z" fill="none" stroke="#0ea5e9" stroke-width="1.5"/>
+              <circle cx="30" cy="30" r="5" fill="#0ea5e9" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+        <h3>エネルギー吸収・反射</h3>
+        <p class="skill-desc">敵の攻撃エネルギーを吸収し、自身の出力に転化。または入射角に応じた反射攻撃を自動発動。</p>
+        <div class="skill-tags">
+          <span class="skill-tag">吸収</span>
+          <span class="skill-tag">反射</span>
+          <span class="skill-tag">自動</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-tier="movement">
+        <div class="skill-tier">MOVEMENT</div>
+        <div class="skill-icon-wrap">
+          <div class="skill-icon">
+            <svg viewBox="0 0 60 60" width="60" height="60">
+              <path d="M10 40 L30 15 L50 40" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+              <path d="M15 45 L30 25 L45 45" fill="none" stroke="#0ea5e9" stroke-width="1" opacity="0.4"/>
+              <line x1="30" y1="15" x2="30" y2="5" stroke="#0ea5e9" stroke-width="1.5"/>
+              <circle cx="30" cy="4" r="2" fill="#0ea5e9"/>
+            </svg>
+          </div>
+        </div>
+        <h3>高速飛行</h3>
+        <p class="skill-desc">マッハ1.8の超音速飛行。水中・高高度にも完全適応。東京湾から渋谷まで47秒。</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Mach 1.8</span>
+          <span class="skill-tag">水中適応</span>
+          <span class="skill-tag">高高度</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weakness Box -->
+    <div class="weakness-box">
+      <h3>⚠ 既知の弱点</h3>
+      <div class="weakness-grid">
+        <div class="weakness-item">
+          <span class="weakness-icon">❄</span>
+          <span>低温耐性ゼロ — 氷属性攻撃に対して無防備</span>
+        </div>
+        <div class="weakness-item">
+          <span class="weakness-icon">🧠</span>
+          <span>精神攻撃 — 孤独を突く精神干渉に脆弱</span>
+        </div>
+        <div class="weakness-item">
+          <span class="weakness-icon">⚡</span>
+          <span>月経期出力低下 — 周期的にエネルギー出力が30%減少</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="section timeline-section">
+    <div class="section-header">
+      <div class="section-number">03</div>
+      <h2 class="section-title">
+        <span class="title-deco">◇</span>
+        CHRONICLE
+        <span class="title-deco">◇</span>
+      </h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="chronicle">
+      <div class="chronicle-line"></div>
+
+      <div class="chronicle-event" data-year="2023">
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-date">2023.10</div>
+        <div class="chronicle-card">
+          <div class="chronicle-badge debut">DEBUT</div>
+          <h3>初陣 — アクア・リーパー戦</h3>
+          <p>覚醒から6ヶ月。初めての実戦で東京湾に出現した水棲怪人を非致死で制圧。世間に「青い閃光」の噂が広まり始める。</p>
+          <div class="chronicle-result win">VICTORY — 非致死制圧</div>
+        </div>
+      </div>
+
+      <div class="chronicle-event" data-year="2024">
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-date">2024.03</div>
+        <div class="chronicle-card">
+          <div class="chronicle-badge major">MAJOR BATTLE</div>
+          <h3>東京湾テロ — 深海帝王クラーケン</h3>
+          <p>海底から現れた巨大怪獣との死闘。初めての致死討伐となり、Minaに深い傷と葛藤を残す。重傷1回目。</p>
+          <div class="chronicle-result pyrrhic">VICTORY — 致死討伐 / 重傷</div>
+        </div>
+      </div>
+
+      <div class="chronicle-event" data-year="2024">
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-date">2024.08</div>
+        <div class="chronicle-card">
+          <div class="chronicle-badge rival">RIVAL</div>
+          <h3>首都高速の対決 — クリムゾン・フレア</h3>
+          <p>炎の異能者との激突。互いの信念がぶつかり合い、決着はつかず。後にMinaの最大の理解者となる。</p>
+          <div class="chronicle-result draw">DRAW — 相互撤退</div>
+        </div>
+      </div>
+
+      <div class="chronicle-event" data-year="2025">
+        <div class="chronicle-dot"></div>
+        <div class="chronicle-date">2025.01</div>
+        <div class="chronicle-card">
+          <div class="chronicle-badge critical">CRITICAL</div>
+          <h3>渋谷襲撃 — シャドウ・ヴォイド</h3>
+          <p>精神攻撃を得意とする敵。Minaの孤独を突き、精神崩壊寸前まで追い込まれるも、覚醒により逆転。</p>
+          <div class="chronicle-result win">VICTORY — 致死討伐</div>
+        </div>
+      </div>
+
+      <div class="chronicle-event" data-year="2026">
+        <div class="chronicle-dot active"></div>
+        <div class="chronicle-date">2026.01</div>
+        <div class="chronicle-card">
+          <div class="chronicle-badge latest">LATEST</div>
+          <h3>最新戦 — サイバーネティック・リヴァイアサン</h3>
+          <p>機械と生物の融合体。オーシャン・シールドが初めて発動し、東京湾ごと凍結させて封印に成功。</p>
+          <div class="chronicle-result win">VICTORY — 封印成功</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Battle Stats -->
+    <div class="battle-stats">
+      <div class="battle-stat-card">
+        <div class="battle-stat-number" data-target="87">0</div>
+        <div class="battle-stat-label">怪人討伐数</div>
+        <div class="battle-stat-detail">致死 42 / 非致死 45</div>
+      </div>
+      <div class="battle-stat-card">
+        <div class="battle-stat-number" data-target="14">0</div>
+        <div class="battle-stat-label">組織壊滅</div>
+      </div>
+      <div class="battle-stat-card">
+        <div class="battle-stat-number" data-target="3">0</div>
+        <div class="battle-stat-label">重傷回数</div>
+      </div>
+      <div class="battle-stat-card">
+        <div class="battle-stat-number rank" data-target="1">0</div>
+        <div class="battle-stat-label">敵組織の優先抹殺対象</div>
+        <div class="battle-stat-detail">ネオ・アトランティス認定</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery-section">
+    <div class="section-header">
+      <div class="section-number">04</div>
+      <h2 class="section-title">
+        <span class="title-deco">◇</span>
+        GALLERY
+        <span class="title-deco">◇</span>
+      </h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item large">
+        <div class="gallery-placeholder">
+          <div class="gallery-overlay">
+            <span class="gallery-label">戦闘形態 — Full Power</span>
+          </div>
+          <div class="gallery-pattern">
+            <svg viewBox="0 0 200 200" width="100%" height="100%">
+              <defs>
+                <radialGradient id="gp1" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="100" cy="100" r="80" fill="url(#gp1)"/>
+              <circle cx="100" cy="100" r="40" fill="none" stroke="#0ea5e9" stroke-width="0.5" opacity="0.5"/>
+              <circle cx="100" cy="100" r="60" fill="none" stroke="#0ea5e9" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-overlay">
+            <span class="gallery-label">日常 — Off Duty</span>
+          </div>
+          <div class="gallery-pattern mini">☕</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-overlay">
+            <span class="gallery-label">オーシャン・シールド</span>
+          </div>
+          <div class="gallery-pattern mini">❄</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-overlay">
+            <span class="gallery-label">夜の東京 — Patrol</span>
+          </div>
+          <div class="gallery-pattern mini">🌙</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-overlay">
+            <span class="gallery-label">vs クリムゾン・フレア</span>
+          </div>
+          <div class="gallery-pattern mini">🔥</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- World Section -->
+  <section id="world" class="section world-section">
+    <div class="section-header">
+      <div class="section-number">05</div>
+      <h2 class="section-title">
+        <span class="title-deco">◇</span>
+        WORLD
+        <span class="title-deco">◇</span>
+      </h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="world-grid">
+      <div class="world-card">
+        <div class="world-card-header">
+          <h3>サファイア結晶</h3>
+          <span class="world-tag">アーティファクト</span>
+        </div>
+        <p>太古の海底文明が生み出した結晶体。所有者と融合し、海洋のエネルギーを操る力を与える。Minaの祖父が海底遺跡から回収し、遺産として凛花に託された。</p>
+      </div>
+
+      <div class="world-card">
+        <div class="world-card-header">
+          <h3>ネオ・アトランティス</h3>
+          <span class="world-tag">敵組織</span>
+        </div>
+        <p>海底文明の復興を掲げる過激派組織。サファイア結晶の奪還を最優先目標としており、Minaを優先抹殺対象第1位に認定している。</p>
+      </div>
+
+      <div class="world-card">
+        <div class="world-card-header">
+          <h3>東京湾防衛圏</h3>
+          <span class="world-tag">ロケーション</span>
+        </div>
+        <p>Minaが主に活動する領域。東京湾を中心に半径50kmの範囲で、海底からの脅威に対する最前線となっている。</p>
+      </div>
+
+      <div class="world-card">
+        <div class="world-card-header">
+          <h3>クリムゾン・フレア</h3>
+          <span class="world-tag">ライバル / 味方</span>
+        </div>
+        <p>炎の異能者。かつてMinaと激突したが、渋谷襲撃事件で共闘して以来、複雑な信頼関係を築いている。Minaにとって数少ない理解者。</p>
+      </div>
+    </div>
+
+    <div class="backstory-box">
+      <h3>バックストーリー</h3>
+      <div class="backstory-timeline">
+        <div class="backstory-item">
+          <span class="backstory-age">幼少期</span>
+          <p>海辺の街で祖父と二人暮らし。海に惹かれる不思議な少女。</p>
+        </div>
+        <div class="backstory-item">
+          <span class="backstory-age">18歳</span>
+          <p>祖父の死。遺品の中からサファイア結晶を発見するも、当時は反応なし。</p>
+        </div>
+        <div class="backstory-item">
+          <span class="backstory-age">22歳</span>
+          <p>東京でセキュリティコンサルタントとして独立。孤独な生活が始まる。</p>
+        </div>
+        <div class="backstory-item">
+          <span class="backstory-age">24歳</span>
+          <p>東京湾で異変が起きた夜、サファイア結晶が覚醒。Mina Celestia誕生。</p>
+        </div>
+        <div class="backstory-item">
+          <span class="backstory-age">現在</span>
+          <p>26歳。3年8ヶ月の戦歴。恋愛経験ゼロ。精神的な孤独が最大の弱点。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="footer-icon">◇</span>
+        <span>MINA CELESTIA</span>
+      </div>
+      <p class="footer-tagline">The Azure Guardian — 青の守護者</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2026 Game of Mina / Fan Tribute Site</p>
+      <p class="footer-disclaimer">This is a fan-made tribute site. All characters and settings are fictional.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
