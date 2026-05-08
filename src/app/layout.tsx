@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { Navigation } from "./navigation"
+import { Footer } from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Game of Mina",
@@ -16,9 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning className="dark">
-      <body className="antialiased bg-background text-foreground">
+      <body className="antialiased bg-background text-foreground flex min-h-screen flex-col">
         <Navigation />
-        {children}
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   )
